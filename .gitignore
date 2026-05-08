@@ -48,6 +48,9 @@ report.html
 # Scripts
 scripts/
 
+# Claude
+.claude/
+
 # Hydra outputs
 outputs/
 multirun/

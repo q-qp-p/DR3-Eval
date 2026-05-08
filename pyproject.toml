@@ -6,7 +6,6 @@ readme = "README.md"
 license = {text = "Apache-2.0"}
 requires-python = ">=3.12"
 dependencies = [
-    "miroflow-tools>=0.1.0",
     "huggingface-hub>=0.28.0",
     "requests>=2.32.3",
     "rich>=13.9.4",
@@ -66,9 +65,8 @@ build-backend = "hatchling.build"
 packages = ["src"]
 
 
-# [tool.uv.sources]
-# For local development, uncomment and adjust the path below:
-# miroflow-tools = { path = "../miroflow-tools", editable = true }
+[tool.uv.sources]
+miroflow-tools = { path = "libs/miroflow-tools", editable = true }
 
 [dependency-groups]
 dev = [
